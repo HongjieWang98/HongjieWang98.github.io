@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Learning Journey - Week 1 | AI Learning Journey</title>
+    <meta name="description" content="Personal reflections on my first week of learning artificial intelligence and machine learning.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">AI Learning Journey</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog.html" class="active">Blog</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay">
+        <div class="container">
+            <div class="search-header">
+                <h2>Search Articles</h2>
+                <div class="close-search">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="search-form">
+                <input type="text" placeholder="Type to search...">
+                <div class="search-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <article class="blog-post">
+            <div class="container">
+                <div class="post-header">
+                    <h1>My AI Learning Journey - Week 1</h1>
+                    <div class="post-meta">
+                        <span class="date">May 22, 2023</span>
+                        <span class="reading-time"><i class="far fa-clock"></i> <span class="time">5</span> min read</span>
+                        <span class="category"><i class="fas fa-tag"></i> Personal Notes</span>
+                    </div>
+                </div>
+                
+                <div class="post-content">
+                    <p class="lead">This is the first entry in my weekly journal documenting my journey into artificial intelligence and machine learning. I'll be sharing my experiences, challenges, and insights as I navigate this fascinating field.</p>
+                    
+                    <h2>Why I Started This Journey</h2>
+                    <p>For years, I've been fascinated by the potential of AI to transform our world. The recent advancements in large language models, computer vision, and reinforcement learning have made it clear that AI is no longer just a theoretical concept but a practical tool reshaping industries and everyday life.</p>
+                    
+                    <p>After watching from the sidelines, I decided it was time to dive in and understand these technologies from the inside out. My goal is not just to use AI tools but to comprehend the underlying principles and eventually contribute to this rapidly evolving field.</p>
+                    
+                    <div class="info-box">
+                        <h3>My Learning Goals</h3>
+                        <ul>
+                            <li>Build a solid foundation in machine learning fundamentals</li>
+                            <li>Gain practical experience implementing AI models</li>
+                            <li>Understand the mathematics behind key algorithms</li>
+                            <li>Apply AI to solve real-world problems</li>
+                            <li>Stay informed about ethical considerations in AI</li>
+                        </ul>
+                    </div>
+                    
+                    <h2>Week 1: Getting Started</h2>
+                    <p>My first week was focused on establishing a structured learning path and setting up the necessary tools and environments. Here's what I accomplished:</p>
+                    
+                    <h3>Learning Resources</h3>
+                    <p>After researching various options, I decided to start with these primary resources:</p>
+                    <ul>
+                        <li><strong>Andrew Ng's Machine Learning Course</strong> - For foundational concepts</li>
+                        <li><strong>Python for Data Science and Machine Learning Bootcamp</strong> - To strengthen my Python skills</li>
+                        <li><strong>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</strong> - For practical implementation</li>
+                        <li><strong>Fast.ai's Practical Deep Learning for Coders</strong> - For a top-down approach to deep learning</li>
+                    </ul>
+                    
+                    <h3>Setting Up My Environment</h3>
+                    <p>I spent considerable time setting up a proper development environment:</p>
+                    
+<pre><code class="language-bash"># Creating a dedicated Python virtual environment
+python -m venv ai_learning_env
+
+# Activating the environment
+source ai_learning_env/bin/activate  # On macOS/Linux
+# or
+ai_learning_env\Scripts\activate  # On Windows
+
+# Installing essential packages
+pip install numpy pandas matplotlib scikit-learn jupyter tensorflow keras</code></pre>
+                    
+                    <p>I also set up a GitHub repository to track my progress and store my practice projects. Version control will be essential as I build more complex models.</p>
+                    
+                    <h3>First Concepts</h3>
+                    <p>I began with some fundamental machine learning concepts:</p>
+                    
+                    <h4>Supervised vs. Unsupervised Learning</h4>
+                    <p>The distinction between these two approaches was my first major insight. Supervised learning uses labeled data to train models that can make predictions, while unsupervised learning finds patterns in unlabeled data.</p>
+                    
+                    <h4>The Machine Learning Workflow</h4>
+                    <p>I learned about the typical workflow:</p>
+                    <ol>
+                        <li>Data collection and preparation</li>
+                        <li>Feature engineering and selection</li>
+                        <li>Model selection and training</li>
+                        <li>Evaluation and tuning</li>
+                        <li>Deployment and monitoring</li>
+                    </ol>
+                    
+                    <h4>Linear Regression</h4>
+                    <p>I implemented my first machine learning algorithm: linear regression. The mathematical simplicity yet practical power of this algorithm was fascinating.</p>
+                    
+                    <div class="math-block">
+                        \[ h_\theta(x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + ... + \theta_n x_n \]
+                    </div>
+                    
+                    <p>The cost function for linear regression:</p>
+                    
+                    <div class="math-block">
+                        \[ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2 \]
+                    </div>
+                    
+                    <h3>First Project: Housing Price Prediction</h3>
+                    <p>To apply what I learned, I worked on a simple housing price prediction project using the Boston Housing dataset. Here's a snippet of my code:</p>
+                    
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_boston
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Load the dataset
+boston = load_boston()
+X = pd.DataFrame(boston.data, columns=boston.feature_names)
+y = boston.target
+
+# Split the data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Train a linear regression model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Evaluate the model
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print(f"Mean Squared Error: {mse:.2f}")
+print(f"R² Score: {r2:.2f}")
+
+# Visualize predictions vs actual values
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred, alpha=0.7)
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], 'r--')
+plt.xlabel('Actual Prices')
+plt.ylabel('Predicted Prices')
+plt.title('Linear Regression: Actual vs Predicted Housing Prices')
+plt.tight_layout()
+plt.show()</code></pre>
+                    
+                    <p>The results were decent for a first attempt, with an R² score of around 0.7. I learned that while linear regression is powerful, many real-world relationships are non-linear and require more sophisticated models.</p>
+                    
+                    <h2>Challenges Faced</h2>
+                    
+                    <h3>Mathematical Foundations</h3>
+                    <p>I quickly realized that my calculus and linear algebra skills were rustier than I thought. I've started refreshing these concepts, as they're crucial for understanding how many algorithms work.</p>
+                    
+                    <h3>Information Overload</h3>
+                    <p>The sheer volume of resources, tutorials, and approaches is overwhelming. I'm learning to focus on one concept at a time and not jump between too many resources.</p>
+                    
+                    <h3>Balancing Theory and Practice</h3>
+                    <p>Finding the right balance between theoretical understanding and hands-on implementation is challenging. I'm trying to follow each theoretical concept with a practical exercise.</p>
+                    
+                    <h2>Insights and Reflections</h2>
+                    
+                    <p>My biggest insight this week is that machine learning is both more accessible and more complex than I initially thought. Libraries like scikit-learn make it easy to implement powerful algorithms with just a few lines of code, but truly understanding what's happening under the hood requires significant mathematical knowledge.</p>
+                    
+                    <p>I've also realized the importance of clean, well-prepared data. As the saying goes, "garbage in, garbage out." No matter how sophisticated your model is, it can't overcome fundamentally flawed or insufficient data.</p>
+                    
+                    <h2>Next Week's Plan</h2>
+                    
+                    <p>For week 2, I plan to:</p>
+                    <ul>
+                        <li>Dive deeper into data preprocessing techniques</li>
+                        <li>Learn about feature engineering and selection</li>
+                        <li>Explore classification algorithms (logistic regression, decision trees)</li>
+                        <li>Complete a classification project on the Titanic dataset</li>
+                        <li>Continue strengthening my mathematical foundations</li>
+                    </ul>
+                    
+                    <h2>Conclusion</h2>
+                    
+                    <p>This first week has been both challenging and exciting. I'm amazed by how much I've learned already, but also humbled by how much more there is to explore. The journey into AI and machine learning is certainly not a sprint but a marathon, and I'm committed to making steady progress each week.</p>
+                    
+                    <p>If you're on a similar journey, I'd love to hear about your experiences and exchange insights. Feel free to reach out through the comments or connect with me on social media.</p>
+                    
+                    <div class="resources-box">
+                        <h3>Resources I Found Helpful This Week</h3>
+                        <ul>
+                            <li><a href="#">3Blue1Brown's Linear Algebra Series</a> - Visual explanations of key concepts</li>
+                            <li><a href="#">Kaggle's Intro to Machine Learning</a> - Hands-on tutorials</li>
+                            <li><a href="#">Machine Learning Mastery Blog</a> - Clear explanations of algorithms</li>
+                            <li><a href="#">StatQuest YouTube Channel</a> - Simplified explanations of complex topics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="post-footer">
+                    <div class="tags">
+                        <span class="tag">Learning Journey</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Beginners</span>
+                        <span class="tag">Personal Notes</span>
+                    </div>
+                    
+                    <div class="share">
+                        <span>Share:</span>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="post-navigation">
+                    <div class="prev">
+                        <a href="understanding-neural-networks.html">
+                            <span>Previous</span>
+                            <h4>Understanding Neural Networks: A Beginner's Guide</h4>
+                        </a>
+                    </div>
+                    <div class="next">
+                        <a href="tools-and-resources.html">
+                            <span>Next</span>
+                            <h4>Tools and Resources for ML Practitioners</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Social Sharing Section -->
+        <div class="share-container">
+            <h3>Share this article</h3>
+            <div class="share-buttons">
+                <button class="share-button share-twitter" data-share="twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+                <button class="share-button share-linkedin" data-share="linkedin">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </button>
+                <button class="share-button share-facebook" data-share="facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+                <button class="share-button share-reddit" data-share="reddit">
+                    <i class="fab fa-reddit-alien"></i> Reddit
+                </button>
+                <button class="share-button share-email" data-share="email">
+                    <i class="fas fa-envelope"></i> Email
+                </button>
+                <button class="copy-link">
+                    <i class="fas fa-link"></i> Copy Link
+                </button>
+            </div>
+        </div>
+        
+        <div class="post-navigation">
+            <a href="../blog.html" class="back-to-blog"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            <div class="post-nav-links">
+                <a href="tools-and-resources.html" class="next-post">Next Post <i class="fas fa-arrow-right"></i></a>
+                <a href="understanding-neural-networks.html" class="prev-post"><i class="fas fa-arrow-left"></i> Previous Post</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>AI Learning Journey</h3>
+                    <p>Documenting my path through artificial intelligence and machine learning, sharing insights and lessons learned along the way.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="subscribe">
+                        <a href="#"><i class="fas fa-rss"></i> Subscribe via RSS</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AI Learning Journey. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/prism.js"></script>
+</body>
+</html>

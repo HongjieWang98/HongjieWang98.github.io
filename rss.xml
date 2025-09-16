@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>AI Learning Journey</title>
+  <link>https://example.com</link>
+  <description>Documenting my path through artificial intelligence and machine learning, sharing insights and lessons learned along the way.</description>
+  <language>en-us</language>
+  <lastBuildDate>Mon, 29 May 2023 12:00:00 GMT</lastBuildDate>
+  <atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml" />
+  
+  <item>
+    <title>Tools and Resources for ML Practitioners</title>
+    <link>https://example.com/blog/tools-and-resources.html</link>
+    <description>A curated collection of essential tools, libraries, and resources for machine learning practitioners at all levels.</description>
+    <pubDate>Mon, 29 May 2023 12:00:00 GMT</pubDate>
+    <guid>https://example.com/blog/tools-and-resources.html</guid>
+    <category>Resources</category>
+    <category>Machine Learning</category>
+  </item>
+  
+  <item>
+    <title>My AI Learning Journey - Week 1</title>
+    <link>https://example.com/blog/my-ai-learning-journey.html</link>
+    <description>Personal reflections on my first week of learning artificial intelligence and machine learning.</description>
+    <pubDate>Mon, 22 May 2023 12:00:00 GMT</pubDate>
+    <guid>https://example.com/blog/my-ai-learning-journey.html</guid>
+    <category>Personal Notes</category>
+    <category>Learning Journey</category>
+  </item>
+  
+  <item>
+    <title>Understanding Neural Networks: A Beginner's Guide</title>
+    <link>https://example.com/blog/understanding-neural-networks.html</link>
+    <description>A beginner-friendly guide to understanding neural networks, their structure, and how they work.</description>
+    <pubDate>Mon, 15 May 2023 12:00:00 GMT</pubDate>
+    <guid>https://example.com/blog/understanding-neural-networks.html</guid>
+    <category>Deep Learning</category>
+    <category>Neural Networks</category>
+  </item>
+  
+  <item>
+    <title>Getting Started with Machine Learning</title>
+    <link>https://example.com/blog/getting-started-with-machine-learning.html</link>
+    <description>An introduction to machine learning concepts, types, and a simple linear regression example.</description>
+    <pubDate>Mon, 08 May 2023 12:00:00 GMT</pubDate>
+    <guid>https://example.com/blog/getting-started-with-machine-learning.html</guid>
+    <category>Machine Learning</category>
+    <category>Beginners</category>
+  </item>
+</channel>
+</rss>

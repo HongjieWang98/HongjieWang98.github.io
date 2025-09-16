@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Newsletter background -->
+  <rect x="50" y="20" width="300" height="210" rx="8" ry="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Newsletter header -->
+  <rect x="50" y="20" width="300" height="40" rx="8" ry="8" fill="url(#headerGradient)"/>
+  <text x="70" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">AI Learning Journey Newsletter</text>
+  
+  <!-- Content blocks -->
+  <rect x="70" y="80" width="260" height="20" rx="4" ry="4" fill="#f1f5f9"/>
+  <rect x="70" y="110" width="180" height="10" rx="2" ry="2" fill="#e2e8f0"/>
+  <rect x="70" y="130" width="220" height="10" rx="2" ry="2" fill="#e2e8f0"/>
+  <rect x="70" y="150" width="200" height="10" rx="2" ry="2" fill="#e2e8f0"/>
+  
+  <!-- Code block -->
+  <rect x="70" y="170" width="260" height="40" rx="4" ry="4" fill="#f8fafc"/>
+  <rect x="70" y="170" width="260" height="40" rx="4" ry="4" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="80" y="190" font-family="Courier, monospace" font-size="10" fill="#334155">def train_model(X, y):</text>
+  <text x="80" y="205" font-family="Courier, monospace" font-size="10" fill="#334155">    return model.fit(X, y)</text>
+  
+  <!-- Icons -->
+  <circle cx="90" cy="230" r="10" fill="#6366F1" opacity="0.8"/>
+  <circle cx="120" cy="230" r="10" fill="#8B5CF6" opacity="0.8"/>
+  <circle cx="150" cy="230" r="10" fill="#EC4899" opacity="0.8"/>
+</svg>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About my AI and machine learning journey">
+    <title>About - AI Learning Journey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">AI Learning Journey</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="about-section">
+                <div class="about-header">
+                    <h1>About Me</h1>
+                    <div class="profile-image">
+                        <img src="images/profile.svg" alt="Profile picture">
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h2>My AI/ML Journey</h2>
+                    <p>Hello! I'm a passionate learner and practitioner in the field of artificial intelligence and machine learning. My journey began with a curiosity about how computers could learn from data and make decisions, which led me down the fascinating path of AI research and applications.</p>
+                    
+                    <p>With a background in computer science, I've been exploring various aspects of machine learning, deep learning, and their practical applications in solving real-world problems. This blog serves as both a personal documentation of my learning process and a platform to share knowledge with fellow enthusiasts.</p>
+                    
+                    <h2>Research Interests</h2>
+                    <ul class="interests-list">
+                        <li><span>Deep Learning</span> - Neural networks, transformer architectures, and their applications</li>
+                        <li><span>Natural Language Processing</span> - Understanding and generating human language</li>
+                        <li><span>Computer Vision</span> - Image recognition, object detection, and visual understanding</li>
+                        <li><span>Reinforcement Learning</span> - Training agents to make decisions through rewards</li>
+                        <li><span>AI Ethics</span> - Responsible development and deployment of AI systems</li>
+                    </ul>
+                    
+                    <h2>Learning Philosophy</h2>
+                    <p>I believe in learning by doing and sharing. My approach involves:</p>
+                    <ul>
+                        <li>Implementing algorithms from scratch to understand their inner workings</li>
+                        <li>Applying theoretical concepts to practical projects</li>
+                        <li>Documenting my learning process to solidify understanding</li>
+                        <li>Sharing knowledge and insights with the community</li>
+                    </ul>
+                    
+                    <h2>Professional Background</h2>
+                    <p>I've worked on various projects involving machine learning, from predictive analytics to computer vision applications. My experience spans across different industries, allowing me to understand how AI can be leveraged to solve diverse problems.</p>
+                    
+                    <h2>Connect With Me</h2>
+                    <p>I'm always open to discussions, collaborations, or just chatting about AI and machine learning. Feel free to reach out through any of the social platforms below or send me a message through the contact form.</p>
+                    
+                    <div class="social-links-large">
+                        <a href="https://github.com/" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-btn">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Personal blog documenting my journey in AI and machine learning. Sharing insights, tutorials, and notes from my learning path.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Subscribe</h3>
+                    <p>Get notified about new articles</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AI Learning Journey. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <div class="search-header">
+                <h2>Search Articles</h2>
+                <button id="closeSearch" aria-label="Close search"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="search-form">
+                <input type="text" id="searchInput" placeholder="Type to search...">
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <button id="searchToggle" class="search-toggle" aria-label="Open search">
+        <i class="fas fa-search"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

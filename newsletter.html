@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription - AI Learning Journey</title>
+    <meta name="description" content="Subscribe to the AI Learning Journey newsletter for updates on artificial intelligence and machine learning.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/social.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AI Learning Journey RSS Feed" href="rss.xml">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">AI Learning Journey</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button id="search-toggle" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Newsletter Subscription</h1>
+                <p>Stay updated with the latest in AI and machine learning</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="newsletter-page">
+                <div class="newsletter-content">
+                    <h2>Join the AI Learning Community</h2>
+                    <p>Subscribe to receive updates on:</p>
+                    <ul>
+                        <li>New blog posts and tutorials</li>
+                        <li>Insights on the latest AI research</li>
+                        <li>Practical machine learning tips</li>
+                        <li>Resources for continuous learning</li>
+                        <li>Special announcements and events</li>
+                    </ul>
+                    
+                    <p>I send newsletters approximately once a month, focusing on quality content rather than frequency. Your email will never be shared with third parties.</p>
+                    
+                    <div class="newsletter-form-container">
+                        <form id="newsletter-form" class="newsletter-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Interests (optional)</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="interests" value="machine-learning"> Machine Learning</label>
+                                    <label><input type="checkbox" name="interests" value="deep-learning"> Deep Learning</label>
+                                    <label><input type="checkbox" name="interests" value="nlp"> Natural Language Processing</label>
+                                    <label><input type="checkbox" name="interests" value="computer-vision"> Computer Vision</label>
+                                    <label><input type="checkbox" name="interests" value="reinforcement-learning"> Reinforcement Learning</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="subscribe-button">Subscribe</button>
+                            </div>
+                            <p class="form-disclaimer">By subscribing, you agree to receive email communications from AI Learning Journey.</p>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="newsletter-sidebar">
+                    <div class="testimonial">
+                        <blockquote>
+                            "The AI Learning Journey newsletter has been an invaluable resource in my machine learning education. The curated content and practical insights have accelerated my learning significantly."
+                        </blockquote>
+                        <cite>— A Satisfied Reader</cite>
+                    </div>
+                    
+                    <div class="newsletter-preview">
+                        <h3>What to expect</h3>
+                        <img src="images/newsletter-preview.svg" alt="Newsletter preview" class="newsletter-image">
+                        <ul>
+                            <li>Concise, actionable content</li>
+                            <li>Code examples and tutorials</li>
+                            <li>Research paper breakdowns</li>
+                            <li>Tool recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Learning Journey</h3>
+                    <p>Documenting my path through artificial intelligence and machine learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> AI Learning Journey. All rights reserved.</p>
+                <p><a href="rss.xml">RSS Feed</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+            <button id="search-close" class="search-close" aria-label="Close search">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Search</h2>
+            <div class="search-input-container">
+                <input type="text" id="search-input" placeholder="Type to search...">
+                <button id="search-button" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/social.js"></script>
+    <script>
+        // Newsletter form submission handler
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // This would normally send data to a server
+            // For demo purposes, we'll just show a success message
+            this.innerHTML = `
+                <div class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank you for subscribing!</h3>
+                    <p>Hi ${name}, you've been successfully added to our newsletter.</p>
+                    <p>We've sent a confirmation email to ${email}.</p>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
