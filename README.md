@@ -1,6 +1,9 @@
-Experience with vibe coding by TRAE
+Experience with vibe coding by TRAE:
+Product website: https://hongjiewang98.github.io
+Author: Hongjie Wang
+Date: Sept 16, 2025
 
-Used Lilian Weng's blog as a design reference
+Note: Used Lilian Weng's blog as a design reference
 
 Pros:
 1. Fast, the website was generated within 20mins
